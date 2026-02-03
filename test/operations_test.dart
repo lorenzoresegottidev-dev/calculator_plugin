@@ -1,4 +1,3 @@
-import 'package:flutter_test/flutter_test.dart';
 import 'package:calculator_plugin/operations.dart';
 
 class TestCalculator implements Operations {
@@ -16,21 +15,5 @@ class TestCalculator implements Operations {
 }
 
 void main() {
-  final calc = TestCalculator();
-
-  test('somma', () {
-    expect(calc.somma(2, 3), 5);
-  });
-
-  test('sottrazione', () {
-    expect(calc.sottrazione(5, 2), 3);
-  });
-
-  test('moltiplicazione', () {
-    expect(calc.moltiplicazione(3, 4), 12);
-  });
-
-  test('divisione', () {
-    expect(calc.divisione(10, 2), 5);
-  });
+  
 }

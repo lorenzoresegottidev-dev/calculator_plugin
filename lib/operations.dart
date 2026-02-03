@@ -1,5 +1,5 @@
 /// Interfaccia Operations per operazioni matematiche di base.
-abstract interface class IOperations {
+abstract class IOperations {
   double somma(double a, double b);
   double sottrazione(double a, double b);
   double moltiplicazione(double a, double b);
