@@ -1,0 +1,9 @@
+name: calculator_plugin
+description: Un package Flutter che fornisce un'interfaccia per operazioni matematiche di base.
+version: 0.0.1
+homepage: https://example.com
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
