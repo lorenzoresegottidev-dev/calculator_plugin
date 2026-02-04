@@ -4,6 +4,7 @@ abstract class IOperations {
   double sottrazione(double a, double b);
   double moltiplicazione(double a, double b);
   double divisione(double a, double b);
+  String greet();
 }
 
 class Operations implements IOperations {
@@ -18,4 +19,7 @@ class Operations implements IOperations {
 
   @override
   double divisione(double a, double b) => a / b;
+
+  @override
+  String greet() => 'Hello from Operations!';
 }
