@@ -7,3 +7,4 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  test: ^1.29.0
