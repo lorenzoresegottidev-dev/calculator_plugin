@@ -1,19 +1,18 @@
+import 'package:test/test.dart';
 import 'package:calculator_plugin/operations.dart';
 
-class TestCalculator implements Operations {
-  @override
-  double somma(double a, double b) => a + b;
-
-  @override
-  double sottrazione(double a, double b) => a - b;
-
-  @override
-  double moltiplicazione(double a, double b) => a * b;
-
-  @override
-  double divisione(double a, double b) => a / b;
-}
-
 void main() {
-  
+  final ops = Operations();
+
+  test('radiceQuadrata di 9 è 3', () {
+    expect(ops.radiceQuadrata(9), closeTo(3.0, 1e-9));
+  });
+
+  test('radiceQuadrata di 0 è 0', () {
+    expect(ops.radiceQuadrata(0), equals(0));
+  });
+
+  test('radiceQuadrata numero negativo lancia ArgumentError', () {
+    expect(() => ops.radiceQuadrata(-1), throwsArgumentError);
+  });
 }
